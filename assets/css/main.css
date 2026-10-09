@@ -137,3 +137,89 @@ main {
   text-align: right;
   margin: 7px 0 0;
 }
+
+/* 4. Categories */
+
+.categories {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.categories > h2 {
+  margin-bottom: 30px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.category-card {
+  min-width: 0;
+  padding: 25px 15px;
+  text-align: center;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(37, 38, 65, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+}
+
+.category-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.category-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.category-card h3 {
+  font-size: 17px;
+  margin-bottom: 15px;
+  color: #111111;
+}
+
+.category-card p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #88899d;
+  margin-bottom: 0;
+}
+
+/* Different icon backgrounds */
+
+.teal {
+  background-color: #c7f1ef;
+}
+
+.purple {
+  background-color: #d7d9ff;
+}
+
+.blue {
+  background-color: #deefff;
+}
+
+.orange {
+  background-color: #ffe0b5;
+}
+
+.pink {
+  background-color: #ffd4d4;
+}
+
+.gray {
+  background-color: #d0d0d8;
+}
