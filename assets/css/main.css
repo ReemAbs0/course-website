@@ -396,3 +396,293 @@ main {
   font-size: 12px;
   color: #a6a6bd;
 }
+/* ========================================
+7. Responsive Design
+======================================== */
+
+/* Tablets and small laptops */
+@media (max-width: 992px) {
+  /* Header */
+  .navbar {
+    padding: 15px 4%;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  /* Continue Learning */
+  .continue-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  /* Categories */
+  .category-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  /* Courses */
+  .course-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .course-card h3 {
+    font-size: 18px;
+  }
+
+  .recommended {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  /* Header */
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 5%;
+  }
+
+  .navbar > img {
+    width: 100px;
+    height: auto;
+  }
+
+  .profile {
+    gap: 6px;
+  }
+
+  .profile img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    gap: 0;
+    justify-content: space-between;
+    overflow-x: auto;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  /* Main content */
+  main {
+    padding: 0;
+  }
+
+  .page-section {
+    padding: 30px 5%;
+  }
+
+  /* Section headings */
+  .section-heading {
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .section-heading h2,
+  .categories > h2 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .section-heading a {
+    font-size: 11px;
+    padding-top: 5px;
+  }
+
+  /* Welcome section */
+  .welcome {
+    padding: 25px 5% 35px;
+  }
+
+  .continue-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .continue-card {
+    padding: 12px;
+  }
+
+  .continue-card > img {
+    height: 190px;
+  }
+
+  .continue-card h3 {
+    font-size: 15px;
+  }
+
+  /* Categories */
+  .categories {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .categories > h2 {
+    margin-bottom: 20px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .category-card {
+    padding: 20px 10px;
+  }
+
+  .category-icon {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 12px;
+  }
+
+  .category-icon img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .category-card h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .category-card p {
+    font-size: 11px;
+    overflow-wrap: anywhere;
+  }
+
+  /* Recommended and More Courses */
+  .recommended {
+    margin: 0;
+    padding: 30px 5% 40px;
+  }
+
+  .more-courses {
+    padding: 30px 5% 40px;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .course-card {
+    padding: 12px;
+  }
+
+  .course-card > img {
+    height: 200px;
+  }
+
+  .course-info {
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .course-card h3 {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .course-bottom {
+    gap: 10px;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 35px 5% 25px;
+  }
+
+  .footer-brand {
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+
+  .footer-brand > img {
+    width: 60px;
+    height: auto;
+  }
+
+  .footer-brand > span {
+    padding-left: 15px;
+    font-size: 12px;
+  }
+
+  .newsletter h3 {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .newsletter input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .newsletter button {
+    width: 100%;
+  }
+
+  .footer-links {
+    gap: 12px;
+  }
+
+  .footer-links a,
+  .copyright {
+    font-size: 10px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+  .nav-links a {
+    font-size: 10px;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h2,
+  .categories > h2 {
+    font-size: 16px;
+  }
+
+  .continue-card > img,
+  .course-card > img {
+    height: 170px;
+  }
+}
